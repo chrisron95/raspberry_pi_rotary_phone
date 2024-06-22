@@ -1,0 +1,48 @@
+buttons:
+  - name: "Start Ring"
+    unique_id: "start_ring"
+    callback: "start_ringing"
+  - name: "Stop Ring"
+    unique_id: "stop_ring"
+    callback: "stop_ringing"
+
+binary_sensors:
+  - name: "Hook Switch"
+    unique_id: "hook_switch"
+    gpio_pin: "hook_switch_pin"
+  - name: "Dial State"
+    unique_id: "dial_state"
+    gpio_pin: "dial_state_pin"
+  - name: "Ringer Output"
+    unique_id: "ringer_output"
+    gpio_pin: "ringer_control_pin"
+
+number_entities:
+  - name: "Max Rings"
+    unique_id: "max_rings"
+    variable: "max_rings"
+    min: 1
+    max: 20
+    step: 1
+    mode: "slider"
+  - name: "Dial Tone Timeout"
+    unique_id: "dial_tone_timeout"
+    variable: "dial_tone_timeout"
+    min: 0.5
+    max: 60
+    step: 0.1
+    mode: "slider"
+  - name: "Busy Signal Timeout"
+    unique_id: "busy_signal_timeout"
+    variable: "busy_signal_timeout"
+    min: 0.5
+    max: 30
+    step: 0.1
+    mode: "slider"
+  - name: "Dial Timeout"
+    unique_id: "dial_timeout"
+    variable: "dial_timeout"
+    min: 0.5
+    max: 10
+    step: 0.1
+    mode: "slider"

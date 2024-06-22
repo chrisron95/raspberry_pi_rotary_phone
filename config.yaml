@@ -1,0 +1,20 @@
+phone_name: "WE 500 Green Phone"
+manufacturer: "Raspberry Pi"
+model: "Zero 2 W"
+
+log_level: "INFO"
+
+enable_ha_mqtt: true
+retain: true
+
+hook_switch_pin: 17
+dial_state_pin: 27
+pulse_pin: 22
+ringer_control_pin: 23
+
+max_rings: 10
+
+dial_tone_timeout: 30.0  # Adjusted to match the range 0.5-60
+busy_signal_timeout: 10.0  # Adjusted to match the range 0.5-30
+dial_timeout: 2.0  # Adjusted to match the range 0.5-10
+

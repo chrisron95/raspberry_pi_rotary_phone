@@ -1,0 +1,6 @@
+paho-mqtt>=1.6.1
+RPi.GPIO>=0.7.1a4
+pygame>=2.1.2
+requests>=2.28.1
+PyYAML>=6.0
+ha-mqtt-discoverable>=0.14.0
